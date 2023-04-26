@@ -8,8 +8,8 @@ drawing = False  # true if mouse is pressed
 ix, iy = -1, -1
 fx, fy = -1, -1
  
-img = cv2.imread('image.jpg')
-img2 = cv2.imread('image.jpg')
+img = cv2.imread('images\image.jpg')
+img2 = cv2.imread('images\image.jpg')
 
 def draw_rectangle(event, x, y, flags, param):
  global ix, iy, fx, fy, drawing
@@ -34,7 +34,7 @@ cv2.setMouseCallback('image', draw_rectangle)
 def save_image():
  global ix, iy, fx, fy
  crop_img = img[iy:fy,ix:fx]
- cv2.imwrite('resultado_tp1.png', crop_img)
+ cv2.imwrite('images\resultado_tp1.png', crop_img)
  print("Imagen recortada guardada!")
  
  
@@ -51,7 +51,7 @@ while(1):
      
  elif k == ord('r'):
   img2 = img
-  img = cv2.imread('image.jpg')
+  img = cv2.imread('images\image.jpg')
   reset_image()
   
  elif k == ord('q'):
