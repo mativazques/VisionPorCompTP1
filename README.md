@@ -1,4 +1,4 @@
-# Trabajo Práctico Nro. 1
+# Trabajo Práctico Nro. 1: Eventos y callbacks
 
 ## Consigna: 
 Usando como base el programa brindado por la cátedra, crear un programa que permita seleccionar una
